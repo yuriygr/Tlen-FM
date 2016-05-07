@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Tlen_FM</title>
+
+    <!-- Ссылки WinJS -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+
+    <!-- Ссылки Tlen_FM -->
+    <link href="css/default.css" rel="stylesheet" />
+	<script src="js/titleBar.js"></script>
+	<script src="js/player.js"></script>
+    <script src="js/default.js"></script>
+</head>
+
+<body class="win-type-body">
+
+	<!-- splitView -->
+	<div class="splitView"
+		 data-win-control="WinJS.UI.SplitView"
+		 data-win-options="{ showDisplayMode : inline}">
+		<!-- Pane area -->
+		<div>
+			<div class="header">
+				<button class="win-splitviewpanetoggle"
+						data-win-control="WinJS.UI.SplitViewPaneToggle"
+						data-win-options="{ splitView: select('.splitView') }"></button>
+			</div>
+
+			<div class="nav-commands">
+				<div data-win-control="WinJS.UI.NavBarCommand"
+					 data-win-options="{ label: 'Главная', icon: 'home' }"></div>
+				<div data-win-control="WinJS.UI.NavBarCommand"
+					 data-win-options="{ label: 'Общение', icon: 'message' }"></div>
+				<div data-win-control="WinJS.UI.NavBarCommand"
+					 data-win-options="{ label: 'Расписание', icon: 'calendar' }"></div>
+				<div data-win-control="WinJS.UI.NavBarCommand"
+					 data-win-options="{ label: 'Настройки', icon: 'settings' }" class="bottom"></div>
+			</div>
+		</div>
+
+		<!-- Content -->
+		<div class="content">
+
+			<center>
+				<br /><br />
+				<img src="images/home_logo.png" class="logo" alt="Тлен-FM" title="Тлен-FM" />
+				<h3 class="win-h3" id="stSubject">Загрузка...</h3>
+				<span id="version">Загрузка...</span>
+			</center>
+		</div>
+
+	</div>
+
+	<!-- Player -->
+	<div id="player">
+		<img class="player-cover" id="stCover" alt="" />
+		<div class="player-info">
+			<p><span id="stTrack">Загрузка...</span> <a title="Найти трек" id="stFindButton" href="" target="_blank">&#xe11a;</a></p>
+			<p>Прямо сейчас: <span class="spanYellow" id="stLive">Загрузка...</span></p>
+		</div>
+		<div class="player-control">
+			<span class="win-new-button win-play" id="stPlayButton" title="Играть"></span>
+			<span class="win-new-button win-pause" id="stPauseButton" title="Пауза"></span>
+			<span class="win-new-button win-refresh" id="stRefreshButton" title="Обновить"></span>
+		</div>
+		<audio id="stPlayer" msAudioCategory="BackgroundCapableMedia"></audio>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+MainPackage=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\bin\ARM\Release\Upload\Tlen FM_1.3.1.0_ARM.appx
+ResourcePack=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\_language-en.appx
+ResourcePack=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\_scale-100.appx
+ResourcePack=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\_scale-125.appx
+ResourcePack=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\_scale-150.appx
+ResourcePack=C:\Users\linak\documents\visual studio 2015\Projects\Tlen FM\Tlen FM\_scale-400.appx

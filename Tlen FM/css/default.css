@@ -1,0 +1,162 @@
+﻿body {
+	background: #131313;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* Константы
+---------------------------------------- */
+.spanYellow { color: #FFD200; }
+.truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: normal;
+}
+.hidden {
+	display: none;
+}
+/* Фиксы
+---------------------------------------- */
+.clearfix { zoom:1; }
+.clearfix:after { clear: both;content: ".";display: block;height: 0;visibility: hidden;font-size: 0; }
+
+
+.logo {
+	display: block;
+	max-width: 350px;
+}
+
+
+
+/*============================================================
+Player
+============================================================*/
+#player {
+	background: #131313;
+	border-top: 1px solid #5c5a58;
+	padding: 5px;
+}
+/* Player Cover
+---------------------------------------- */
+#player .player-cover {
+	background: #292929;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+/* Player Information
+---------------------------------------- */
+#player .player-info {
+	float: left;
+	padding: 4px 10px;
+	overflow: hidden;
+	font-size: 10pt;
+}
+#player .player-info p {
+	margin: 0;
+	white-space: nowrap;
+	text-overflow: clip;
+	line-height: 150%;
+}
+#player .player-info span#stTrack { font-size: 1.2em; }
+#player .player-info a#stFindButton {
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	margin-left: 10px;
+}
+#player .player-info a#stFindButton:hover { color: #FFD200; }
+#player .player-info a#stFindButton:active { color: #A78900; }
+/* Player Controls
+---------------------------------------- */
+#player .player-control {
+	float: right;
+	padding: 5px 10px;
+	overflow: hidden;
+}
+
+
+
+
+/* New Buttons
+ ====================================== */
+.win-new-button {
+  touch-action: manipulation;
+  display: inline-block;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  vertical-align: bottom;
+}
+.win-new-button:hover { color: #FFD200; }
+.win-new-button:active { color: #A78900; }
+.win-new-button:before {
+	font-family: "Segoe MDL2 Assets", "Symbols";
+	font-weight: normal;
+	vertical-align: 50%;
+}
+.win-new-button.win-play:before { content: "\E102"; }
+.win-new-button.win-pause:before { content: "\E103"; }
+.win-new-button.win-refresh:before { content: "\E149"; }
+
+
+
+@media (max-width: 599px) {
+	#player .player-control {
+		padding: 5px;
+		display: block;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+/*============================================================
+SplitView
+============================================================*/
+.win-splitview-content {
+	padding: 5px 10px;
+}
+.win-splitview-pane {
+	background: #000;
+}
+.win-splitview-pane .win-navbarcommand-button { background-color: transparent; }
+/* Кнопка вызова меню */
+html.win-hoverable button.win-splitviewpanetoggle:hover {
+	background-color: #FFD200!important;
+	color: #000!important;
+}
+html.win-hoverable button.win-splitviewpanetoggle:active {
+	background-color: #A78900!important;
+	color: #000!important;
+}
+/* Кнопки навигации */
+.win-navbarcommand-button:hover,
+.win-navbarcommand-splitbutton:hover {
+	background-color: #FFD200!important;
+	color: #000!important;
+}
+.win-navbarcommand-button:hover.win-pressed,
+.win-navbarcommand-splitbutton:hover.win-pressed {
+	background-color: #A78900!important;
+	color: #000!important;
+}
+/* Кнопка настроек снизу */
+.win-navbarcommand.bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
