@@ -102,7 +102,7 @@
 						var stType = a['description'];
 					} else {
 						a = csRes["/play"];
-						var stType = "Нет эфира (non-stop)ssda";
+						var stType = "Нет эфира (non-stop)";
 					}
 					this.stLiveSet(stType);
 					// Обложка
